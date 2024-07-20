@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body">
+    <header class="header">
+        <h1>Phone Book</h1>
+    </header>
+    <div class="container">
+        <div class="details">
+            <input type="text" placeholder="Search" id="search-input" onkeyup="searchContact(event)">
+            <div class="options">
+                <img src="img/add.png" onclick="popAdd()" alt="">
+                <img src="img/delete.png" onclick="dltAll()" alt="">
+            </div>
+        </div>
+        <section class="contacts">
+            <div class="contact">
+                <!-- <div class="contact-details">
+                    <img src="img/contact.png" alt="">
+                    <p>Jane Smith</p>
+                    <p class="detail">0000000000</p>
+                    <p class="detail">example@example.com</p>
+                    <div class="contact-actions">
+                        <img onclick="openModal()" src="img/info.png" alt="Error 404">
+                        <img src="img/edit.png" alt="Error 404">
+                        <img src="img/delete.png" alt="Error 404">
+                    </div>
+                </div> -->
+                <ul class="list">
+                    <!-- <li class="contact">
+                        <img src="img/contact.png" alt="">
+                        <p>Jane Smith</p>
+                        <p class="detail">0000000000</p>
+                        <p class="detail">example@example.com</p>
+                        <div class="contact-actions">
+                            <img onclick="openModal()" src="img/info.png" alt="Error 404">
+                            <img src="img/edit.png" alt="Error 404">
+                            <img src="img/delete.png" alt="Error 404">
+                        </div>
+                    </li> -->
+                </ul>
+            </div>
+        </section>
+    </div>
+    <div class="modal" id="myModal" onclick="closeModal(event)">
+        <div class="modal-content">
+          <button class="close-btn" id="closeModalBtn" onclick="closeModal(event)">&times;</button>
+          <div class="modal-container">
+
+
+          </div>
+        </div>
+      </div>
+    
+      
+    <footer class="footer">
+        <p>Done By: Ali Hanafi , Bashar Safieh
+        </p>
+
+    </footer>
+    <script src="contact_info.js"></script>
+</body>
+
+</html>
